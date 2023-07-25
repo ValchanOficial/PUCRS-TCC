@@ -1,2 +1,1 @@
-# PUCRS-TCC
-PUCRS - Pós Graduação em Desenvolvimento Full Stack - Desenvolvimento de Aplicação Web
+# PUCRS - Pós Graduação em Desenvolvimento Full Stack - TCC - Desenvolvimento de Aplicação Web
