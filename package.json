@@ -9,7 +9,7 @@
   },
   "description": "PUCRS - Projeto de conclusão de curso",
   "engines": {
-    "node": ">=20.5.0"
+    "node": ">=18.x"
   },
   "scripts": {
     "dev": "next dev",
