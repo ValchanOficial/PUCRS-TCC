@@ -1,0 +1,51 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "Valéria Padilha de Vargas",
+    "email": "valeria_padilha@yahoo.com.br",
+    "url": "https://valchan.com.br/"
+  },
+  "description": "PUCRS - Projeto de conclusão de curso",
+  "engines": {
+    "node": ">=20.5.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sb": "storybook dev -p 6006",
+    "build-sb": "storybook build",
+    "studio": "npx prisma studio",
+    "migrate": "npx prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12",
+    "next": "13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6",
+    "undici": "^5.22.1",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.1.1",
+    "@storybook/addon-interactions": "^7.1.1",
+    "@storybook/addon-links": "^7.1.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.1.1",
+    "@storybook/nextjs": "^7.1.1",
+    "@storybook/react": "^7.1.1",
+    "@storybook/testing-library": "^0.2.0",
+    "eslint-plugin-storybook": "^0.6.13",
+    "prisma": "^5.0.0",
+    "storybook": "^7.1.1"
+  }
+}
