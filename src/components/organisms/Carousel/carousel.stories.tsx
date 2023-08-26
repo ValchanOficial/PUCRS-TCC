@@ -21,7 +21,7 @@ export const Default: Story = {
 export const ReverseDirectionTrue: Story = {
     args: {
         list: productsMock,
-        autoplay: {
+        options: {
             reverseDirection: true,
         }
     }
@@ -30,7 +30,7 @@ export const ReverseDirectionTrue: Story = {
 export const ReverseDirectionFalse: Story = {
     args: {
         list: productsMock,
-        autoplay: {
+        options: {
             reverseDirection: false,
         }
     }

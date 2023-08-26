@@ -16,7 +16,7 @@ export default function SectionProducts() {
                 position='center'
                 className={styles.titleDesc}
             />
-            <Carousel list={productsMock} className={styles.carousel} />
+            <Carousel list={productsMock} className={styles.carousel} options={{ reverseDirection: true }} />
             <Carousel list={companiesMock} />
         </Section>
     )
