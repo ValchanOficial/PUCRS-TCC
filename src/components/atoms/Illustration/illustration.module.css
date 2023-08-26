@@ -1,0 +1,27 @@
+.light {
+    color: var(--color-white);
+}
+
+.dark {
+    color: var(--color-black);
+}
+
+.default {
+    height: 50rem;
+    width: auto;
+}
+
+.large {
+    height: 20rem;
+    width: 20rem;
+}
+
+.medium {
+    height: 10rem;
+    width: 10rem;
+}
+
+.small {
+    height: 5rem;
+    width: 5rem;
+}

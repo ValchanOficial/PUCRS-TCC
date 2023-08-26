@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70rem;
+    padding: 4rem 3rem;
+    margin: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+    gap: 5rem;
+}
+
+.container > p {
+    width: 50rem;
+}

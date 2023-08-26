@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.base {
+  background-color: var(--color-white);
+}
+
+.cian {
+  background-color: var(--color-cian);
+}
+
+.purple {
+  background-color: var(--color-purple);
+}
+
+.bicolor {
+  background: linear-gradient(
+    to top,
+    var(--color-dark-purple) 0%,
+    var(--color-dark-purple) 60%,
+    var(--color-purple) 40%,
+    var(--color-purple) 100%
+  );
+}

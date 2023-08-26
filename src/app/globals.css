@@ -4,15 +4,17 @@
 
   --color-white: #fff;
   --color-black: #000;
-  --color-black-light: #333;
+  --color-dark-gray: #333330;
   --color-gray: #d9d9d9;
   --color-light-gray: #f4f4f4;
   --color-yellow: #ffea2b;
+  --color-dark-yellow: #ffd705;
   --color-gold: #eec03f;
   --color-purple: #2d2150;
   --color-dark-purple: #231a3d;
   --color-cian: #297e99;
   --color-red-tomato: #ff4162;
+ 
 }
 
 * {
@@ -21,13 +23,22 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   max-width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -58,4 +69,10 @@ h5 {
 
 h6 {
   font-size: 2rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
 }

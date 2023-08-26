@@ -8,11 +8,130 @@ datasource db {
   relationMode = "prisma"
 }
 
+enum Role {
+  CLIENT
+  SELLER
+  ADMIN
+}
+
 model User {
-  id      String @id @default(uuid())
-  email   String @unique
-  name    String
-  surname String
+  id             String   @id @default(uuid())
+  role           Role     @default(CLIENT)
+  email          String   @unique
+  name           String
+  surname        String
+  birthdate      DateTime
+  cellphone      Int
+  phone          Int?
+  cpf            Int
+  cnpj           Int?
+  corporate_name String?
+  password       String
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+
+  addresses Address[]
+  orders    Order[]
 
   @@map("users")
+}
+
+model Address {
+  id           String   @id @default(uuid())
+  street       String
+  number       String
+  neighborhood String
+  city         String
+  state        String
+  country      String   @default("BR")
+  zipcode      Int
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+  user_id      String
+  user         User     @relation(fields: [user_id], references: [id])
+
+  @@index([user_id])
+  @@map("addresses")
+}
+
+model Product {
+  id         String    @id @default(uuid())
+  name       String
+  price      Float
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+  deleted    Boolean   @default(false)
+
+  orders       OrderItem[]
+  images       ProductImage[]
+  restrictions ProductRestrictions[]
+
+  @@map("products")
+}
+
+model ProductRestrictions {
+  id         String   @id @default(uuid())
+  product_id String
+  product    Product  @relation(fields: [product_id], references: [id])
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([product_id])
+  @@map("product_restrictions")
+}
+
+model ProductImage {
+  id         String   @id @default(uuid())
+  product_id String
+  product    Product  @relation(fields: [product_id], references: [id])
+  base64     String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([product_id])
+  @@map("product_images")
+}
+
+model Order {
+  id         String      @id @default(uuid())
+  user_id    String
+  user       User        @relation(fields: [user_id], references: [id])
+  created_at DateTime    @default(now())
+  updated_at DateTime    @updatedAt
+  items      OrderItem[]
+
+  @@index([user_id])
+  @@map("orders")
+}
+
+model OrderItem {
+  id             String        @id @default(uuid())
+  order_id       String
+  order          Order         @relation(fields: [order_id], references: [id])
+  product_id     String
+  product        Product       @relation(fields: [product_id], references: [id])
+  quantity       Int
+  price          Float
+  current_status String
+  created_at     DateTime      @default(now())
+  updated_at     DateTime      @updatedAt
+  status         OrderStatus[]
+
+  @@index([order_id])
+  @@index([product_id])
+  @@map("order_items")
+}
+
+model OrderStatus {
+  id         String    @id @default(uuid())
+  order_id   String
+  order_item OrderItem @relation(fields: [order_id], references: [id])
+  status     String
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+
+  @@index([order_id])
+  @@map("order_status")
 }

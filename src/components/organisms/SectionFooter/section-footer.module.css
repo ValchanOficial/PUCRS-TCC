@@ -1,0 +1,31 @@
+.section {
+    display: flex;
+    justify-content: flex-end;    
+    flex-direction: column;
+    height: 60rem;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+}
+
+.content {
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 30rem;
+    padding-top: 5rem;
+}
+
+.description {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    text-align: right;
+}
+
+.description > a:hover {
+    color: var(--color-yellow);
+}

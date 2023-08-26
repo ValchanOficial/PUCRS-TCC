@@ -1,0 +1,13 @@
+.section {
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    height: 70rem;
+    padding: 0 3rem;
+}
+
+.section > div:last-child {
+    display: flex;
+    gap: 6rem;
+    margin-top: 10rem;
+}

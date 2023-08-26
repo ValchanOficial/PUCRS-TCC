@@ -1,0 +1,21 @@
+.container {
+    width: 100%;
+}
+
+.swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper > img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.swiper > p {
+    margin-top: 2rem;
+} 

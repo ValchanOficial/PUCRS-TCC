@@ -1,0 +1,9 @@
+.listItem > svg, 
+.listItem > a > svg {
+    height: 4rem;
+    width: auto;
+}
+
+.listItem > a:hover {
+    color: var(--color-yellow);
+}

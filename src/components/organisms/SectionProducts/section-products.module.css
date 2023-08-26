@@ -1,0 +1,19 @@
+.section {
+    display: flex;
+    justify-content: center;    
+    flex-direction: column;
+    height: 70rem;
+    padding: 0 3rem;
+}
+
+.titleDesc {
+    align-items: center;
+}
+
+.titleDesc > p {
+    white-space: nowrap;
+}
+
+.carousel {
+    margin: 6rem;
+}

@@ -15,8 +15,13 @@ Design: [link](https://www.canva.com/design/DAFppOe1EZY/t0aUOGaysH_H17mhEUbbIA/v
 - [Storybook](https://storybook.js.org/)
 - [Prisma](https://www.prisma.io/)
 - [Undici](https://github.com/nodejs/undici)
+- [Mercado Pago](https://www.mercadopago.com.br/developers/pt)
+- [React Icons](react-icons)
+- [Swiper JS](https://swiperjs.com/)
 - [Vercel](https://vercel.com/)
 - [PlanetScale](https://planetscale.com/)
+- [Unsplash](https://unsplash.com/pt-br)
+- [Flaticon - Food icons created by Freepik](https://www.flaticon.com/free-icons/food)
 
 ## Rodando o projeto:
 
