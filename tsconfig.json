@@ -23,9 +23,12 @@
     "paths": {
       "@/*": ["./src/*"],
       "@app": ["./src/app/*"],
+      "@svg": ["src/assets/SVG/index.ts"],
+      "@config": ["./src/config/index.ts"],
       "@prisma": ["./src/lib/prisma.ts"],
       "@atoms": ["./src/components/atoms/index.ts"],
       "@molecules": ["./src/components/molecules/index.ts"],
+      "@organisms": ["./src/components/organisms/index.ts"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -1,0 +1,14 @@
+.link {
+    color: inherit;
+    height: fit-content;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.link:is(:hover, :active, :visited) {
+    color: inherit;
+}
+
+.link > * {
+    color: inherit;
+}

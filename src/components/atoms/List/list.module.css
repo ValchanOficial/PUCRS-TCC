@@ -1,0 +1,44 @@
+.content-white {
+    color: var(--color-white);
+}
+
+.content-black {
+    color: var(--color-black);
+}
+
+.content-yellow {
+    color: var(--color-yellow);
+}
+
+.content-dark-yellow {
+    color: var(--color-dark-yellow);
+}
+
+.list {
+    padding-left: 2rem;
+}
+
+.listWithTitle {
+    padding-left: 4rem;
+}
+
+.show {
+    list-style-type: disc;
+}
+
+.hide {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal {
+    display: flex;
+    gap: 1rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

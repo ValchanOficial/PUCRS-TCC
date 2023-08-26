@@ -1,0 +1,14 @@
+.nav {
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+.nav > a:hover {
+    color: var(--color-yellow);
+}
+
+.nav > a + a {
+  border-left: .2rem solid var(--color-white);
+  margin-left: 1rem;
+  padding-left: 1rem;
+}

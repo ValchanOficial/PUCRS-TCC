@@ -1,0 +1,23 @@
+.light {
+    color: var(--color-white);
+}
+
+.dark {
+    color: var(--color-black);
+}
+
+.gray {
+    color: var(--color-dark-gray);
+}
+
+.large {
+    font-size: 2.8rem;
+}
+
+.medium {
+    font-size: 2.4rem;
+}
+
+.small {
+    font-size: 1.8rem;
+}

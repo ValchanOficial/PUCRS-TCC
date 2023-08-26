@@ -1,0 +1,25 @@
+.container {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.white {
+    color: var(--color-white);
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.yellow{
+    color: var(--color-yellow);
+}
+
+.dark-yellow {
+    color: var(--color-dark-yellow);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
