@@ -5,8 +5,8 @@
     align-items: center;
     height: 70rem;
     padding: 4rem 3rem;
-    margin: auto;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -16,4 +16,24 @@
 
 .container > p {
     width: 50rem;
+}
+
+@media(max-width: 600px) {
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section > div {
+        width: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    .container {
+        gap: 2rem;
+    }
+
+    .container > p {
+        width: auto;
+    }
 }

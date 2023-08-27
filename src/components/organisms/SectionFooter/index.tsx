@@ -6,7 +6,7 @@ import styles from './section-footer.module.css';
 
 export default function SectionFooter() {
     return (
-        <Section id="contact" theme="purple" className={styles.section}>
+        <Section id="contact" theme="purple" container={false} className={styles.section}>
             <footer className={styles.footer}>
                 <div className={styles.content}>
                     <TitleList title="Precisa de ajuda?" color='dark-yellow' contentColor="black" items={helpList} />

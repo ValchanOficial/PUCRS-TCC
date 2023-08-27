@@ -1,5 +1,4 @@
 .container {
-    max-width: calc(100vw - (100vw - 1160px) / 2);
     width: 100%;
     display: flex;
     justify-content: center;

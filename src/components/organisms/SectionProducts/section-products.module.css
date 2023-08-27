@@ -1,9 +1,14 @@
 .section {
     display: flex;
-    justify-content: center;    
+    justify-content: center;   
+    align-items: center; 
     flex-direction: column;
     height: 70rem;
     padding: 0 3rem;
+}
+
+.carousels {
+    width: 100%;
 }
 
 .titleDesc {
@@ -16,4 +21,10 @@
 
 .carousel {
     margin: 6rem;
+}
+
+@media(max-width: 600px) {
+    .section {
+        display: none;
+    }
 }
