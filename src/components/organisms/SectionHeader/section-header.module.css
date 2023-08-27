@@ -35,3 +35,34 @@
 .left > img {
     padding-right: 6rem;
 }
+
+@media(max-width: 600px) {
+    .header {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .right {
+        padding: 0;
+    }
+
+    .right > div:first-child {
+        margin-bottom: 4rem;
+    }
+
+    .left {
+        align-items: flex-start;
+    }
+
+    .left > nav {
+        margin: 0 0 2rem 0;
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .left > img {
+        padding: 0;
+    }
+}

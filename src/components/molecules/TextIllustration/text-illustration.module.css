@@ -8,3 +8,10 @@
 .container > p {
     margin-top: 4rem;
 }
+
+
+@media(max-width: 600px) {
+    .container > p {
+        margin-top: 2rem;
+    }
+}

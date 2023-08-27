@@ -8,7 +8,7 @@ import styles from './section-products.module.css';
 
 export default function SectionProducts() {
     return (
-        <Section theme="purple" className={styles.section}>
+        <Section theme="purple" container={false} className={styles.section}>
             <TitleDesc
                 title="Dê uma espiada aqui"
                 description="Lojas e produtos que fazem parte do nosso ecossistema"
@@ -16,8 +16,10 @@ export default function SectionProducts() {
                 position='center'
                 className={styles.titleDesc}
             />
-            <Carousel list={productsMock} className={styles.carousel} options={{ reverseDirection: true }} />
-            <Carousel list={companiesMock} />
+            <div className={styles.carousels}>
+                <Carousel list={productsMock} className={styles.carousel} options={{ reverseDirection: true }} />
+                <Carousel list={companiesMock} />
+            </div>
         </Section>
     )
 } 

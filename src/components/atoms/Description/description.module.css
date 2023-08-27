@@ -21,3 +21,17 @@
 .small {
     font-size: 1.8rem;
 }
+
+@media(max-width: 600px) {
+    .small {
+        font-size: 1rem;
+    }
+
+    .medium {
+        font-size: 1.4rem;
+    }
+
+    .large {
+        font-size: 1.6rem;
+    }
+}

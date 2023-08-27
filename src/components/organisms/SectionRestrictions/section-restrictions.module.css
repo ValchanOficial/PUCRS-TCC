@@ -11,3 +11,15 @@
     gap: 6rem;
     margin-top: 10rem;
 }
+
+@media(max-width: 600px) {
+    .section {
+        height: auto;
+        padding: 3rem 2rem;
+    }
+
+    .section > div:last-child {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+}

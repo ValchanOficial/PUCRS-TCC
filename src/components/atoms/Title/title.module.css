@@ -4,3 +4,10 @@
     line-height: 4rem;
     margin-bottom: 0.5rem;
 }
+
+@media(max-width: 600px) {
+    .title {
+        font-weight: 700;
+        line-height: 3.5rem;
+    }
+}

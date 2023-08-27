@@ -1,6 +1,19 @@
 .section {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.noContainer {
+  max-width: 100%;
+  width: 100%;
 }
 
 .base {

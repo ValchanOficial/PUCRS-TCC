@@ -15,3 +15,15 @@
 .container > p {
     width: 50rem;
 }
+
+@media(max-width: 600px) {
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section > div {
+        width: auto;
+        margin: 0 0 1rem 0;
+    }
+}
