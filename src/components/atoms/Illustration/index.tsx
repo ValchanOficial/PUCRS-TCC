@@ -11,7 +11,7 @@ interface ImageProps {
     priority?: boolean;
 }
 
-export default function Illustration({ alt, src = Shopping, priority = false, theme = 'light', size = 'default' }: ImageProps) {
+export default function Illustration({ alt, src = Shopping, priority = true, theme = 'light', size = 'default' }: ImageProps) {
     return (
         <Image
             src={src}
