@@ -6,6 +6,11 @@ Design: [link](https://www.canva.com/design/DAFppOe1EZY/t0aUOGaysH_H17mhEUbbIA/v
 > Ela faz aquilo que nós fizermos com ela.”
 > **Gabriela Cardozo Ferreira**
 
+## Requisitos:
+
+- Node v20.5.0
+- Yarn 4.0.2
+
 ## Tecnologias utilizadas:
 - [Next.js 13](https://nextjs.org/)
 - [React](https://react.dev/)
